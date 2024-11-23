@@ -1,1 +1,164 @@
-/* Add your own styles */
+/* General Page Style */
+body {
+    font-family: 'Cinzel Decorative', cursive;
+    background: linear-gradient(to bottom right, #ff6b6b, #f7ff6b, #6bffb6);
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px #000000;
+    color: #ffd700;
+}
+
+/* Controls Styling */
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#controls label {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #fffcf9;
+    text-shadow: 2px 2px #000;
+}
+
+input[type="search"] {
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    margin-right: 15px;
+    width: 300px;
+    box-shadow: 0px 0px 15px #ffd700;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+input[type="search"]:focus {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px #ffd700, 0px 0px 15px #f7ff6b;
+}
+
+/* Button Styling */
+button {
+    padding: 15px 25px;
+    background-color: #ff1493;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 3px solid #ff1493;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #ffd700;
+    border: 3px solid #ffd700;
+    color: #ff1493;
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Result Div Styling */
+#result {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px #ffd700;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #f0e68c;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* List Styling */
+#result ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#result li {
+    background: linear-gradient(to right, #ff1493, #ff6b6b, #ffd700);
+    color: #ffffff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-shadow: 2px 2px #000000;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#result li:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px #ffd700, 0px 0px 15px #ff1493;
+}
+
+/* Fancy Footer Animation */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffd700;
+    font-family: 'Cinzel Decorative', cursive;
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.5);
+    animation: glowing 3s infinite alternate;
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 10px #ffd700, 0 0 20px #ff1493, 0 0 30px #ff6b6b;
+    }
+    to {
+        box-shadow: 0 0 20px #ffd700, 0 0 30px #ff1493, 0 0 40px #ff6b6b;
+    }
+}
+
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+    background-color: #ff1493;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ffecb3;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
